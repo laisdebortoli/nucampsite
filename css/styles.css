@@ -33,6 +33,12 @@ header h2 {
 }
 
 .navbar {
-    background-color: rgb(46, 2, 108);
+    background-color: rgb(242, 239, 245);
     
+}
+
+.tab-content {
+    border: 1px solid rgb(248, 243, 243);
+    border-top: none;
+    padding: 10px;
 }
