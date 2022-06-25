@@ -34,7 +34,7 @@
 
           <!-----------------------------------------------BUTTON RESERVE HERE------------------------------------------------------------>
           <div class="mt-4 col-md-offset-4 col-xl-offset-2">
-            <a class="btn btn-info btn-lg"  role="button" data-toggle="modal" data-target="#reserveModal">  Reserve Here</a>
+            <a class="btn btn-info btn-lg"  role="button" id="reserveButton">  Reserve Here</a>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-lg modal-dialog" role="document">
         <div class="modal-content">
-          <div class="bg-info text-white modal-header">
+          <div class="modal-header">
             <h3 class="modal-title">Reserve a Campsite</h3>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
@@ -137,7 +137,7 @@
           </ul>
           <!------LOGIN BUTTON----------->
           <span class="navbar-text ml-auto">
-            <a role="button" data-toggle="modal" data-target="#loginModal">
+            <a role="button" id="loginButton">
               <i class="fa fa-sign-in"></i> Login </a>
           </span>
         </div>
@@ -382,5 +382,19 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
+
+    <script>
+
+       $('#reserveButton').click(function() {
+          $('#reserveModal').modal('show');
+      });  
+
+      $('#loginButton').click(function() {
+          $('#loginModal').modal('show');
+      });  
+     
+    </script>
   </body>
+
+
 </html>
